@@ -1,0 +1,27 @@
+let NFTs = [];
+function mintNFT(_name,_description,_eyecolor) {
+    const nft = {
+      name: _name,
+      description: _description,
+      eyecolor: _eyecolor
+    };
+    NFTs.push(nft);
+    return nft;
+  }
+function listNFTs() 
+{
+    for (let i = 0; i < NFTs.length; i++) {
+        console.log("Name: " + NFTs[i].name);
+        console.log("Description: " + NFTs[i].description);
+        console.log("Image: " + NFTs[i].eyecolor);
+        console.log("-----------------------");
+      }
+}
+function getTotalSupply() 
+{
+    return NFTs.length;
+}
+const nft1 = mintNFT("Shubhanshu", "Student", "brown");
+const nft2 = mintNFT("Bob", "Teacher", "light brown");
+listNFTs();
+console.log("Total NFTs: " + getTotalSupply());
