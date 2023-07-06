@@ -41,4 +41,7 @@ contract MyToken {
 * After that we click mint scroll down button and add the value in the mint value (eg.. we add 1000 unit) then we click on transact, then we see that we have totalsupply we got all 1000 unit.
 * After this same goes to burn but in burn how many we want to burn (eg.. we want to burn 500) after that we transact it then we see that we left with 500 totalsupply.
 * If we burn the more than totalsupply there is no change in the total supply because of the we using condition satement to overcome this situation.
-
+## Authors
+Shubhanshu Pandey
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
