@@ -15,7 +15,7 @@ pragma solidity ^0.8.18;
 contract ErrorHandling{
     function statement(uint256 x) external pure returns (uint256) {
         // require statement
-        require(x>0, "x never less than zero");
+        require(x>=0, "x never less than zero");
         
         // assert statement
         assert(x!=0);
@@ -31,4 +31,8 @@ contract ErrorHandling{
 ```
 * To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.18" (or another compatible version), and then click on the "Compile ErrorHandling.sol" button.
 * Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. After that we go to the Deployed contracts and click on siled button and call the x value to confirm the statement.
-* After that we pass the value of x in the statement 
+* After that we pass the value of x in the statement then check that all the value which we are passing matching the statement condition are not. If not then it returns error and if it match then it return 2 times of x.
+## Authors
+Shubhanshu Pandey
+## Licence
+This project is licensed under the MIT License - see the LICENSE.md file for details.
