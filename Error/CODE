@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract ErrorHandling{
+    function statement(uint256 x) external pure returns (uint256) {
+        // require statement
+        require(x >=0, "x never less than zero");
+        
+        // assert statement
+        assert(x!=0);
+        
+        // revert statement
+        if (x == 42) {
+            revert("x cannot be 42");
+        }
+        
+        return x * 2;
+    }
+}
